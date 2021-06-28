@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="image_url_list">
+        <item>https://picsum.photos/id/909/200/300</item>
+        <item>https://picsum.photos/id/91/3504/2336</item>
+        <item>https://picsum.photos/id/910/6000/3375</item>
+        <item>https://picsum.photos/id/911/3000/1819</item>
+        <item>https://picsum.photos/id/912/5616/3744</item>
+        <item>https://picsum.photos/id/913/4522/3015</item>
+        <item>https://picsum.photos/id/914/5683/3794</item>
+        <item>https://picsum.photos/id/915/4528/2214</item>
+        <item>https://picsum.photos/id/916/8192/4064</item>
+        <item>https://picsum.photos/id/918/3747/2489</item>
+        <item>https://picsum.photos/id/919/5472/3648</item>
+        <item>https://picsum.photos/id/92/3568/2368</item>
+        <item>https://picsum.photos/id/921/3533/2160</item>
+        <item>https://picsum.photos/id/922/4452/2472</item>
+        <item>https://picsum.photos/id/923/4616/2699</item>
+        <item>https://picsum.photos/id/924/3000/2250</item>
+        <item>https://picsum.photos/id/925/5472/3648</item>
+    </string-array>
+</resources>
