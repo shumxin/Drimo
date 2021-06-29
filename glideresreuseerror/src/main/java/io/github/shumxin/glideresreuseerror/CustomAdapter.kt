@@ -1,6 +1,8 @@
 package io.github.shumxin.glideresreuseerror
 
+import android.graphics.drawable.BitmapDrawable
 import android.graphics.drawable.Drawable
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -33,11 +35,16 @@ class CustomAdapter(private val dataSet: Array<String>) :
                     resource: Drawable,
                     transition: Transition<in Drawable>?
                 ) {
+                    Log.i("smx", "onResourceReady view: " + holder.imageView + " bitmap: " + (resource as BitmapDrawable).bitmap)
                     holder.imageView.setImageDrawable(resource)
                 }
 
                 override fun onResourceCleared(placeholder: Drawable?) {
-
+                    if (holder.imageView.drawable is BitmapDrawable) {
+                        val bitmap = (holder.imageView.drawable as BitmapDrawable).bitmap
+                        Log.i("smx", "onResourceCleared view: " + holder.imageView + " bitmap: " + bitmap + " isRecycled: " + bitmap.isRecycled)
+                    }
+                    holder.imageView.setImageDrawable(null)
                 }
             })
     }
